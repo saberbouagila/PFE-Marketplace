@@ -24,7 +24,7 @@ const {
   PRODUCT_REVIEW_CREATE_SUCCESS,
   PRODUCT_REVIEW_CREATE_FAIL,
   PRODUCT_REVIEW_CREATE_RESET,
-} = require('../constants/productConstants');
+} = require("../constants/productConstants");
 
 export const productListReducer = (
   state = { loading: true, products: [] },
@@ -75,6 +75,7 @@ export const productDetailsReducer = (state = { loading: true }, action) => {
       return state;
   }
 };
+
 export const productCreateReducer = (state = {}, action) => {
   switch (action.type) {
     case PRODUCT_CREATE_REQUEST:

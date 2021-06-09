@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const CONNECTION_URL =
-  "mongodb+srv://PFEProjectDB:sb20021990@cluster0.x65rg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://saberbouagila:sb20021990@cluster0.sovyk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(process.env.MONGODB_URL || CONNECTION_URL, {
   useNewUrlParser: true,
