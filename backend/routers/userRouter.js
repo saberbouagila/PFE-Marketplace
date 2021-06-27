@@ -78,6 +78,7 @@ userRouter.get(
     }
   })
 );
+
 userRouter.put(
   '/profile',
   isAuth,
@@ -118,7 +119,7 @@ userRouter.get(
   })
 );
 
-userRouter.delete(
+userRouter.delete(  
   '/:id',
   isAuth,
   isAdmin,

@@ -25,6 +25,7 @@ export default function OrderScreen(props) {
     error: errorPay,
     success: successPay,
   } = orderPay;
+
   const orderDeliver = useSelector((state) => state.orderDeliver);
   const {
     loading: loadingDeliver,
@@ -32,6 +33,7 @@ export default function OrderScreen(props) {
     success: successDeliver,
   } = orderDeliver;
   const dispatch = useDispatch();
+  
   useEffect(() => {
     const addPayPalScript = async () => {
       const { data } = await Axios.get('/api/config/paypal');
